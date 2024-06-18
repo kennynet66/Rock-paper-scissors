@@ -17,7 +17,7 @@ const player1Next = document.getElementById("player1-next");
 let player1 = {};
 let player2 = {};
 
-// Display results
+// Display results and trigger confetti
 function displayResults(result, playerName) {
     if(result === "draw"){
         setTimeout(() => {
@@ -29,6 +29,12 @@ function displayResults(result, playerName) {
             output.textContent = "New Game!";
         }, 2000);
         output.textContent = `${playerName} wins!`;
+        // Trigger confetti
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
     }
 }
 
