@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <form class="player-form" id="player-form">
+      <!-- Player 1 play -->
+      <div class="playerone" id="player1-section">
+        <input type="text" id="_player1" placeholder="Player 1" /> <br />
+        <select name="" id="player1-select">
+          <option value="">----Select an option----</option>
+          <option value="Rock">Rock</option>
+          <option value="Paper">Paper</option>
+          <option value="Scissors">Scissors</option>
+        </select>
+        <br />
+        <input type="button" value="Next" id="player1-next" />
+      </div>
+
+      <!-- Player 2 play -->
+      <div class="playertwo" id="player2-section" style="display: none;">
+        <input type="text" id="_player2" placeholder="Player 2" /> <br />
+        <select name="" id="player2-select">
+          <option value="">----Select an option----</option>
+          <option value="Rock">Rock</option>
+          <option value="Paper">Paper</option>
+          <option value="Scissors">Scissors</option>
+        </select>
+        <br />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <h2 id="output">New Game!</h2>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

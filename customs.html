@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="select-div">
+        <p id="selected-item">Select one</p>
+        <ul class="options">
+            <li>Rock</li>
+            <li>Paper</li>
+            <li>Scissors</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const selectDiv = document.querySelector("#selected-item");
+    const options = document.querySelector(".options");
+    const listItems = document.querySelectorAll("li");
+
+    selectDiv.addEventListener("click", (e) =>{
+        options.classList.toggle("active");
+        
+        listItems.forEach(item =>{
+            item.addEventListener("click", () =>{
+                selectDiv.textContent = item.textContent
+                options.classList.remove("active");
+            });
+        });
+    });
+</script>
+</html>

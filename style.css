@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#selected-item {
+  background-color: dodgerblue;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+#selected-item:hover {
+  cursor: pointer;
+  background-color: rgb(14, 118, 222);
+}
+
+.select-div {
+  max-width: 400px;
+}
+
+.options {
+  list-style-type: none;
+  background-color: #f7f7f7;
+  /* padding: 5px 8px; */
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.options li {
+  line-height: 2;
+  padding: 0 5px;
+}
+
+.options li:hover {
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
